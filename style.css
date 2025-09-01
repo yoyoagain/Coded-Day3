@@ -1,0 +1,52 @@
+/* Layout & theme */
+*{ box-sizing:border-box; }
+body{
+  margin:0;
+  font-family:system-ui,Tahoma,Arial,sans-serif;
+  background:#0d1117;
+  color:#e6edf3;
+}
+
+/* BIG container (center + flexbox) */
+.container{
+  margin:40px auto;                  /* center on page */
+  max-width:1100px;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:20px;                          /* space between cards */
+  padding:20px;
+}
+
+/* Card */
+.card{
+  width:260px;
+  padding:16px;
+  border:1px solid #1f2937;
+  border-radius:14px;
+  background:#0b1220;
+  box-shadow:0 6px 18px rgba(0,0,0,.35);
+  transition: background-color .25s ease, transform .18s ease; /* BONUS: transition */
+}
+.card:hover{
+  background-color:#101826;          /* hover color */
+  transform: translateY(-2px);
+}
+
+.card h1{
+  font-size:18px;
+  margin:0 0 12px;
+  color:#8bd1ff;
+  text-align:center;
+}
+
+/* Images — EXACT requirement */
+img{
+  width:200px;
+  height:200px;
+  display:block;
+  margin:0 auto;                     /* center inside card */
+  object-fit:cover;
+  border-radius:10px;
+  border:1px solid #1f2937;
+}
